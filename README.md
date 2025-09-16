@@ -5,9 +5,9 @@ This repository contains the code, data, and documentation for a research projec
 ### Repository Structure
 
 * `docs/`: Contains project documentation.
-* `notebooks/`: Will contain Jupyter notebooks with the data analysis code and a narrative of the findings.
-* `data/`: Will contain the raw and processed data files.
-* `figures/`: Will contain any generated plots or visualizations.
+* `notebooks/`: Contains Jupyter notebooks with the data analysis code and a narrative of the findings.
+* `data/`: Contains the raw and processed data files.
+* `figures/`: Contains any generated plots or visualisations.
 
 ### To-Do
 * [ ] Complete OSF Registration
