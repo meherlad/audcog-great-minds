@@ -1,0 +1,84 @@
+# OSF Preregistration: Association Between APOE4 Carrier Status and Web-based Central Hearing Performance
+
+This document outlines the research plan for a secondary analysis of data from the Great Minds dementia cohort.
+
+## Metadata
+
+* **Title:** Association Between APOE4 carrier status and Web-based Central Hearing Performance
+* **Description:** This study will conduct a secondary analysis of data from the Great Minds cohort, a research-ready register managed by the Dementia Platform UK. The primary aim is to investigate the relationship between Apolipoprotein E4 (APOE4) allele status and performance on remote hearing tests. By analysing these pre-existing genetic and audiological data, the project seeks to explore the relationship between a key genetic risk factor for Alzheimer's disease and hearing function, providing potential insights into the early risk profiling of dementia.
+* **Contributors:** Chris Happs and Meher Lad
+* **Category:** Project
+* **Affiliated Institutions:** No affiliated institutions
+* **License:** [License Type, e.g., CC BY 4.0]
+* **Subjects:** Medicine and Health Sciences
+* **Tags:** Apolipoprotein E, Dementia, Hearing
+
+---
+
+## Study Information
+
+### Research Questions
+
+* Is there a significant association between APOE4 status and web-based central hearing performance in older adults?
+* Is there a significant association between APOE ε4 carrier status, and specific types of central hearing measures in older adults such as speech-in-noise thresholds or auditory working memory precision?
+* Does the relationship between age and hearing performance differ between APOE ε4 carriers and non-carriers?
+
+### Hypotheses
+
+* **H1:** APOE ε4 carrier status will be significantly associated with poorer overall web-based central hearing performance. We predict that individuals with one or more ε4 alleles will have lower hearing test scores compared to non-carriers.
+* **H2:** APOE ε4 carrier status will be specifically associated with poorer performance on tests of speech-in-noise perception, a type of hearing difficulty linked to central auditory processing.
+* **H3:** There will be a significant interaction between age and APOE ε4 status. We predict that the negative relationship between increasing age and hearing performance will be stronger for APOE ε4 carriers than for non-carriers.
+
+---
+
+## Data Description
+
+### Datasets Used
+
+This study will use a pre-existing, cross-sectional dataset from the Great Minds cohort, a research register managed by Dementia Platform UK (DPUK). The specific data for this analysis includes APOE genotype status, derived from saliva samples, and performance metrics from remote, self-administered hearing tests. We will use the subset of participants for whom both complete APOE genotyping and remote hearing test data are available.
+
+### Data Availability & Access
+
+The dataset is available through protected access. Researchers must submit a formal application through the Dementia Platform UK (DPUK) Data Portal.
+
+* **Data Identifier:** `https://portal.dementiasplatform.uk`
+
+### Data Collection Procedures
+
+The data collection procedures are documented by DPUK. APOE genotyping was performed on DNA extracted from saliva samples, and remote hearing performance was assessed using self-administered, web-based audiological tests.
+
+### Variables
+
+* **Outcome Variable (Dependent Variable):** Remote hearing performance score (continuous). A higher score indicates better performance.
+* **Predictor Variable (Independent Variable):** APOE ε4 carrier status (binary: 0 = non-carrier, 1 = carrier).
+* **Covariates:** Age (continuous, years) and Sex (categorical, Male vs Female).
+
+### Missing Data
+
+Participants will be excluded from the analyses if they have missing data for the outcome variable, predictor variable, age, or sex.
+
+### Expected Sample Size
+
+The initial dataset contains XXX participants. The final sample size will be determined after applying the exclusion criteria.
+
+### Statistical Outliers
+
+Outliers will be defined as data points more than 3 IQRs from the quartiles. We will perform a sensitivity analysis by running our models with and without outliers.
+
+---
+
+## Analyses
+
+### Statistical Models
+
+* **Hypothesis 1 & 2:** An Independent Samples t-test will compare mean hearing scores between APOE ε4 carriers and non-carriers.
+* **Hypothesis 3:** A **Multiple Linear Regression** model will be used to test for an interaction between age and APOE ε4 status.
+    * **Specification:** `Hearing_Performance = β₀ + β₁(APOE_Status) + β₂(Age) + β₃(Sex) + β₄(APOE_Status * Age) + ε`
+
+### Inference Criteria
+
+For all statistical tests, we will use a p-value of less than 0.05 as the threshold for statistical significance.
+
+### Exploratory Analysis
+
+We will explore a potential gene-dose effect using **ANOVA** by comparing mean hearing scores across three groups: non-carriers, single ε4 carriers, and double ε4 carriers. We will also explore potential sex differences by including a three-way interaction term between APOE status, Age, and Sex.
