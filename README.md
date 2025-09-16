@@ -10,7 +10,7 @@ This repository contains the code, data, and documentation for a research projec
 * `figures/`: Will contain any generated plots or visualizations.
 
 ### To-Do
-[] Complete OSF Registration
+* [ ] Complete OSF Registration
 
 ### Contributors
 
