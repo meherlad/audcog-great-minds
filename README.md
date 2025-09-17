@@ -11,8 +11,13 @@ This repository contains the code, data, and documentation for a research projec
 
 ### To-Do
 * [ ] Complete OSF Registration
+* [ ] Test workflow with ipynb file
+* [ ] Primary and Secondary analysis as per pre-reg
+* [ ] Tables and figures
+* [ ] Plan paper as per PLoS One author instructions
 
 ### Contributors
 
 * **Chris Happs** - Medical Student
+* **Arina Toma** - Co-Author
 * **Meher Lad** - Supervisor
